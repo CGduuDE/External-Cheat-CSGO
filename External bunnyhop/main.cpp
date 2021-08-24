@@ -1,6 +1,6 @@
 #include <iostream>
 #include <Windows.h>
-#include <C:\Users\cgduude\Desktop\mem class\MemMan.h>
+#include <MemMan.h>
 
 
 
@@ -125,9 +125,9 @@ void FakeLag()
     for (;;)
     {
         memory.writeMem(val.gameModule + offsets.dwbSendPackets, false);
-        Sleep(16 * (1 / 64)); //16 фактор, ставьте любой от 0 до 16
+        Sleep(16 * (1 / 64)); //16 ГґГ ГЄГІГ®Г°, Г±ГІГ ГўГјГІГҐ Г«ГѕГЎГ®Г© Г®ГІ 0 Г¤Г® 16
         memory.writeMem(val.gameModule + offsets.dwbSendPackets, true);
-        Sleep(1 * (1 / 64)); // отправляем 1 пакет чтобы не тайм аутнулись
+        Sleep(1 * (1 / 64)); // Г®ГІГЇГ°Г ГўГ«ГїГҐГ¬ 1 ГЇГ ГЄГҐГІ Г·ГІГ®ГЎГ» Г­ГҐ ГІГ Г©Г¬ Г ГіГІГ­ГіГ«ГЁГ±Гј
     }
 }
 
